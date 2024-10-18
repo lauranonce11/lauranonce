@@ -65,10 +65,10 @@ body {
     display: inline-block;
 }
 
-h2 {
+h3 {
     font-size: 30px;
     color: var(--primary-color);
-    text-shadow: var(--header-shadow);
+    text-shadow: 2px 2px 0 black;
     margin-bottom: 40px;
 }
 
@@ -93,31 +93,6 @@ h2 {
     margin-top: 30px;
     border: var(--profile-border-width) solid var(--border-color);
 }
-
-.skill-bar {
-    margin-bottom: 20px;
-}
-
-.bar-container {
-    background-color: var(--bar-bg-color);
-    height: var(--bar-height);
-    margin-bottom: 5px;
-    border: 2px solid black;
-}
-
-.bar {
-    background-color: var(--primary-color);
-    height: 100%;
-}
-
-.bar.pensiero-critico { width: 90%; }
-.bar.competenza-multilinguistica { width: 50%; }
-.bar.competenza-informatica { width: 65%; }
-.bar.capacità { width: 80%; }
-.bar.problem-solving { width: 75%; }
-.bar.creatività { width: 75%; }
-.bar.flessibilità-cognitiva { width: 85%; }
-.bar.intelligenza-emotiva { width: 90%; }
 
 .logo-top-right {
     position: absolute;
