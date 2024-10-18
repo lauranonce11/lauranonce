@@ -65,7 +65,7 @@ body {
     display: inline-block;
 }
 
-h3 {
+.h3 {
     font-size: 30px;
     color: var(--primary-color);
     text-shadow: 2px 2px 0 black;
