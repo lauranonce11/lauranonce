@@ -1,0 +1,128 @@
+:root {
+    --primary-color: rgb(149, 36, 149);
+    --secondary-color: #FFD900;
+    --background-color: violet;
+    --text-color: #333;
+    --container-bg-color: #fff;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --font-family: "Quick-Fox", sans-serif;
+    --navbar-bg-color: white;
+    --header-shadow: 2px 2px 0 var(--primary-color);
+    --border-color: rgb(149, 36, 149);
+    --bar-bg-color: #ddd;
+    --bar-height: 10px;
+    --profile-border-width: 5px;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+    background-color: var(--container-bg-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--secondary-color);
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: var(--secondary-color);
+}
+
+.header {
+    font-size: 60px;
+    color: black;
+    text-shadow: var(--header-shadow);
+    display: inline-block;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    text-shadow: var(--header-shadow);
+    margin-bottom: 40px;
+}
+
+.yellow-box {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.yellow-box .content {
+    text-align: center;
+}
+
+.profile-image {
+    width: 300px;
+    height: 400px;
+    border-radius: 1%;
+    float: right;
+    margin-left: 10px;
+    margin-top: 30px;
+    border: var(--profile-border-width) solid var(--border-color);
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.bar-container {
+    background-color: var(--bar-bg-color);
+    height: var(--bar-height);
+    margin-bottom: 5px;
+    border: 2px solid black;
+}
+
+.bar {
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.bar.pensiero-critico { width: 90%; }
+.bar.competenza-multilinguistica { width: 50%; }
+.bar.competenza-informatica { width: 65%; }
+.bar.capacità { width: 80%; }
+.bar.problem-solving { width: 75%; }
+.bar.creatività { width: 75%; }
+.bar.flessibilità-cognitiva { width: 85%; }
+.bar.intelligenza-emotiva { width: 90%; }
+
+.logo-top-right {
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    width: 90px;
+    height: auto;
+}

@@ -1,0 +1,242 @@
+:root {
+    --primary-color: rgb(149, 36, 149);
+    --secondary-color: #FFD900;
+    --background-color: violet;
+    --text-color: #333;
+    --header-shadow: 2px 2px 0 var(--primary-color);
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --button-bg-color: #f5a5cd;
+    --font-family: "Quick-Fox", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.intro-paragraph {
+    position: absolute;
+    top: 100px; 
+    margin-bottom: 20px; 
+}
+
+.intro-paragraph.left {
+    left: 20px; 
+}
+
+.intro-paragraph.right {
+    right: 20px; 
+}
+
+.custom-button {
+    background-color: var(--button-bg-color);
+    color: var(--primary-color);
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.custom-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: var(--secondary-color);
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: var(--secondary-color);
+}
+
+.container {
+    position: relative; 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+h1 {
+    font-size: 60px;
+    color: #0e0e0e;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.header {
+    font-size: 60px;
+    color: black; 
+    text-shadow: var(--header-shadow);
+    display: inline-block;
+}
+
+.yellow-box {
+    background-color: var(--secondary-color); 
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block; 
+    position: relative;
+}
+
+h3 {
+    font-size: 30px;
+    color: var(--primary-color);
+    text-shadow: var(--header-shadow);
+    margin-bottom: 40px;
+}
+
+.yellow-box .content, .contact-form .content {
+    text-align: justify;
+}
+
+.contact-form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    text-shadow: var(--header-shadow);
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    width: 580px;
+    min-width: 580px;
+    max-width: 580px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--background-color);
+}
+
+iframe {
+    border: 10px solid #0e0e0e;
+    border-radius: 7px; 
+    width: 300px; 
+    height: 200px; 
+    margin-left: 400px;
+}
+
+.contact-bar {
+    height: auto; 
+    width: 50px;
+    background-color: white; 
+    position: absolute; 
+    left: -38px; 
+    top: 310px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    flex-direction: column; 
+    border: 3px solid #0e0e0e;
+    border-radius: 7px;
+}
+
+.contact-bar img {
+    width: 30px; 
+    height: 30px; 
+    margin-top: 20px;
+    transition: filter 0.3s;
+}
+
+.icon-wrapper {
+    margin-bottom: 10px; 
+}
+
+.contact-bar a {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--background-color) 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.3s;
+}
+
+.contact-bar a:hover {
+    background-position: bottom;
+}
+
+.logo-top-right {
+    position: absolute; 
+    top: 4px;
+    right: 1px;
+    width: 90px; 
+    height: auto; 
+}
