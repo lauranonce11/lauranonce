@@ -14,13 +14,12 @@
         <nav class="navbar">
             <a href="index.html">HOME</a> 
             <a href="chi_sono.html" class="active">CHI SONO</a>
-            <a href="cosa_leggo.html">COSA LEGGO</a>
             <a href="cosa_scrivo.html">COSA SCRIVO</a>
             <a href="contatti.php">CONTATTI</a>
         </nav>
         <h1 class="header">CONTATTI</h1>
         <div class="yellow-box">
-            <h2>Contatta Laura Non C'e'</h2>
+            <h3>Contatta Laura Non C'e'</h3>
             <p>Hai letto quello che scrivo e vuoi chiedermi qualche curiosita'? Hai sentito di qualche notizia in linea con il blog?
             Vuoi dirmi la tua su qualcosa che ho scritto? Vuoi contattarmi per qualsiasi altro motivo?<br>
             Scrivimi utilizzando il modulo qui sotto oppure clicca una delle icone sulla sinistra e ti rispondero' appena posso.<br>
@@ -45,22 +44,22 @@
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1310.2310764293045!2d15.077422521671172!3d37.503691178198075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313e32e5660bc6f%3A0xed2957c55d0d69ce!2sMonastero%20dei%20Benedettini%20di%20San%20Nicol%C3%B2%20l'Arena!5e0!3m2!1sit!2sit!4v1689187200000!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="contact-form">
-                <form action="submit.php" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Messaggio:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit">Invia</button>
+                <form action="send_email.php" method="POST">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+            
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="message">Messaggio:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            
+                    <input type="submit" value="INVIA" class="small-button">
                 </form>
             </div>
+        </div>
+        <div class = "copyright">
+            copyright 2024 - Laura Non C'e'...il patriarcato si.
         </div>
     </div>
 </div>

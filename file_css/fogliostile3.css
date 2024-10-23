@@ -93,7 +93,7 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 60px !important;
     color:#0e0e0e;
     -webkit-background-clip: text;
     background-clip: text;
@@ -112,7 +112,9 @@ h2 {
     color: black; 
     text-shadow: var(--header-shadow);
     display: inline-block;
+    letter-spacing: normal; 
 }
+
 
 .yellow-box {
     background-color: var(--secondary-color);
@@ -172,4 +174,9 @@ h3 {
     width: 90px; 
     height: auto; 
     z-index: 1;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--primary-color);
 }

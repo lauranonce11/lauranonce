@@ -119,7 +119,7 @@ h2 {
 h3 {
     font-size: 30px;
     color: var(--primary-color);
-    text-shadow: var(--header-shadow);
+    text-shadow: 2px 2px 0 black;
     margin-bottom: 40px;
 }
 
@@ -198,8 +198,8 @@ iframe {
 
 .contact-bar {
     height: auto; 
-    width: 50px;
-    background-color: white; 
+    width: 40px;
+    background: white;
     position: absolute; 
     left: -38px; 
     top: 310px; 
@@ -207,30 +207,26 @@ iframe {
     align-items: center; 
     justify-content: space-around; 
     flex-direction: column; 
-    border: 3px solid #0e0e0e;
-    border-radius: 7px;
+    border: 2px solid rgba(14, 14, 14, 0.8);
+    border-radius: 10px; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
 .contact-bar img {
     width: 30px; 
     height: 30px; 
-    margin-top: 20px;
-    transition: filter 0.3s;
+    margin-top: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.contact-bar img:hover {
+    transform: scale(1.3); /* Aggiunge un leggero zoom al passaggio del mouse */
+    filter: brightness(1.5); /* Rende le icone leggermente più luminose */
 }
 
 .icon-wrapper {
     margin-bottom: 10px; 
-}
-
-.contact-bar a {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--background-color) 50%);
-    background-size: 100% 200%;
-    background-position: top;
-    transition: background-position 0.3s;
-}
-
-.contact-bar a:hover {
-    background-position: bottom;
 }
 
 .logo-top-right {
@@ -239,4 +235,23 @@ iframe {
     right: 1px;
     width: 90px; 
     height: auto; 
+}
+
+.copyright {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.small-button {
+    width: 80px;  /* Definisce una larghezza fissa */
+    padding: 5px;  /* Spazio interno ridotto */
+    background-color: violet; 
+    color: black;
+    border-radius: 5px;
+    font-family: "Quick-Fox", sans-serif;
+    font-size: 15px;
+}
+
+.small-button:hover {
+    background-color: #FFD900;  /* Cambia il colore al passaggio del mouse */
 }

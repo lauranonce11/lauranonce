@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.cdnfonts.com/css/quick-fox" rel="stylesheet">
     <link rel="stylesheet" href="file_css\fogliostile.css">
-    <!-- Includi jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         /* Stili CSS per il popover */
         .popover-content {
@@ -16,99 +14,75 @@
             position: absolute;
             background-color: #fff;
             border: 1px solid #ccc;
-            padding: 10px;
+            padding: 5px;
+            width: 300px;
+            font-size: 22px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             z-index: 9999; /* Assicura che il popover sia sopra gli altri elementi */
+        }
+        .popover-target {
+            position: relative;
+            display: inline-block; /* Permette di posizionare il popover rispetto al testo */
+            cursor: pointer; /* Cambia il cursore per indicare che è interattivo */
         }
     </style>
 </head>
 <body>
-    <p class="intro-paragraph left">
-        <img src="Immagini_E_Icone/non-una-di-meno-1152x768.jpg" alt="Immagine Non Una di Meno">
-    </p>
-    <p class="intro-paragraph right">
-        <img src="Immagini_E_Icone/image-5abcaa838b1b1.jpg" alt="Immagine">
-    </p>
     <div class="container">
         <img src="Immagini_E_Icone\Senza_titolo.jpeg" alt="Logo" class="logo-top-right">
         <nav class="navbar">
             <a href="chi_sono.html" class="button-yellow">CHI SONO</a>
-            <a href="cosa_leggo.html" class="button-yellow">COSA LEGGO</a>
             <a href="cosa_scrivo.html" class="button-yellow">COSA SCRIVO</a>
             <a href="contatti.html" class="button-yellow">CONTATTI</a>
         </nav>
         <div class="header-container">
             <img src="Immagini_E_Icone\Senza_titolo.jpeg" alt="Logo" class="logo">
             <h1 class="header">
-                LAURA NON C'E'
+                SESSISMO <span class="popover-target">101</span>
+                <span class="popover-content">(un primo corso introduttivo)</span>
             </h1>
-        </div>
-        <h2>... il <span id="popover-trigger1" class="popover-trigger" style="color: violet;">patriarcato</span> si.</h2>
-
-        <div id="popover-content1" class="popover-content">
-            Il patriarcato, in quanto egemonia nata in eta' primitiva e tuttora persistente, e' largamente considerato come il naturale andamento delle cose (“e' sempre stato cosi'”)
-            producendo una non equita' tra uomo e donna in tutti i comparti dell’esistenza e sfociando in fenomeni discriminatori quali il gender pay gap, la cultura dello stupro, 
-            la violenza, il catcalling, il femminicidio, l’assenza di donne in ruoli apicali e, in generale, discriminazioni che quotidianamente ostacolano l’empowerment femminile.
         </div>
 
         <div class="yellow-box">
             <div class="content">
                 <h3>Programma</h3>
                 Ciao a tutt*.<br>
-                Questo progetto nasce dalla volonta' di far conoscere tematiche che spesso non vengono trattate dai media istituzionali,
+                Questo progetto nasce dalla volontà di far conoscere tematiche che spesso non vengono trattate dai media istituzionali,
                 e se sì, soltanto in maniera superficiale.<br>
-                Gli articoli e i libri che troverete, scritti da me o da chi per me, trattano tutti di femminismo 
-                <span id="popover-trigger2" class="popover-trigger" style="color: rgb(149, 36, 149)">intersezionale</span>
-                <div id="popover-content2" class="popover-content">
-                    Secondo il femminismo intersezionale le discriminazioni si intersecano in un reticolo di intrecci che restituiscono l’interdipendenza di tutte le ingiustizie, 
-                    le quali impattano a molteplici livelli l’una sull’altra e il piu' delle volte in modo simultaneo. Secondo questo approccio il femminismo, 
-                    se vuole veramente essere inclusivo perseguendo l’uguaglianza di genere, deve affrontare le diverse e piu' ampie sfaccettature della disuguaglianza.
-                </div>,
-                un femminismo che rende l'analisi politica e sociale piu' complessa, ma allo stesso tempo piu' autentica, evitando di schiacciare tutta
+                Secondo il femminismo intersezionale le discriminazioni si intersecano in un reticolo di intrecci che restituiscono l’interdipendenza di tutte le ingiustizie, 
+                le quali impattano a molteplici livelli l’una sull’altra e il più delle volte in modo simultaneo. Secondo questo approccio il femminismo, 
+                se vuole veramente essere inclusivo perseguendo l’uguaglianza di genere, deve affrontare le diverse e più ampie sfaccettature della disuguaglianza,
+                un femminismo che rende l'analisi politica e sociale più complessa, ma allo stesso tempo più autentica, evitando di schiacciare tutta
                 l'esperienza di una persona lungo un unico asse di oppressione.<br>
-                Il potere dell'approccio intersezionale e' anche quello di creare solidarieta' tra diverse categorie oppresse,
-                contrastando la segmentazione della societa' che e' invece funzionale al mantenimento dello status quo.<br>
-                Le lotte, infatti, non le fanno i singoli, ma le comunita', e queste non sono mai scollegate le une dalle altre.<br>
-                E' necessario dunque riprendere il discorso in un'ottica che vada oltre il genere,
+                Il potere dell'approccio intersezionale è anche quello di creare solidarietà tra diverse categorie oppresse.<br>
+                Le lotte, infatti, non le fanno i singoli, ma le comunità, e queste non sono mai scollegate le une dalle altre.<br>
+                È necessario dunque riprendere il discorso in un'ottica che vada oltre il genere,
                 un'ottica che lo ponga come base per andare alla radice delle oppressioni e sradicarla.<br>
-                Vi lascio un articolo che vi fara' capire meglio quello di cui parlo e quello di cui leggerete nel blog.<br>
-                Buona lettura!
-                <div class="centered">
-                    <a href="https://startupitalia.eu/impact/social-innovation/non-solo-questione-di-genere-il-femminismo-si-evolve-e-diventa-intersezionale/" class="custom-button">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1458/1458298.png" width="30" alt="Icona di lettura">
-                    </a>
-                </div>
             </div>
         </div>
+        <div class="copyright">
         copyright 2024 - Laura Non C'e'...il patriarcato si.
+        </div>
     </div>
 
-    <!-- Codice JavaScript per gestire il popover -->
     <script>
-        $(document).ready(function() {
-            var trigger1 = $('#popover-trigger1');
-            var trigger2 = $('#popover-trigger2');
-            var popover1 = $('#popover-content1');
-            var popover2 = $('#popover-content2');
+        // Seleziona gli elementi popover
+        const popoverTargets = document.querySelectorAll('.popover-target');
 
-            // Mostra il popover per "patriarcato" quando passi sopra il trigger1
-            trigger1.mouseenter(function() {
-                popover1.css('display', 'block');
+        popoverTargets.forEach(target => {
+            const popover = target.nextElementSibling; // Seleziona il popover accanto al target
+
+            target.addEventListener('mouseenter', function() {
+                popover.style.display = 'block';
+
+                // Calcola la posizione del popover
+                const rect = target.getBoundingClientRect(); // Ottieni la posizione dell'elemento
+                popover.style.top = rect.bottom + window.scrollY + 'px'; // Posizione verticale sotto l'elemento
+                popover.style.left = rect.left + (rect.width / 2) - (popover.offsetWidth / 2) - 245 + 'px'; // Sposta a sinistra di 20px
             });
 
-            // Nascondi il popover per "patriarcato" quando esci dal trigger1
-            trigger1.mouseleave(function() {
-                popover1.css('display', 'none');
-            });
-
-            // Mostra il popover per "intersezionale" quando passi sopra il trigger2
-            trigger2.mouseenter(function() {
-                popover2.css('display', 'block');
-            });
-
-            // Nascondi il popover per "intersezionale" quando esci dal trigger2
-            trigger2.mouseleave(function() {
-                popover2.css('display', 'none');
+            target.addEventListener('mouseleave', function() {
+                popover.style.display = 'none'; // Nascondi il popover
             });
         });
     </script>

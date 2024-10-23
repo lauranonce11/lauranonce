@@ -172,3 +172,8 @@ h3 {
     height: auto; 
 }
 
+.copyright {
+    text-align: center;
+    color: var(--primary-color);
+}
+

@@ -65,10 +65,10 @@ body {
     display: inline-block;
 }
 
-.h3 {
+h3 {
     font-size: 30px;
     color: var(--primary-color);
-    text-shadow: 2px 2px 0 black;
+    text-shadow: 2px 2px black;
     margin-bottom: 40px;
 }
 
@@ -100,4 +100,9 @@ body {
     right: 1px;
     width: 90px;
     height: auto;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--primary-color);
 }
